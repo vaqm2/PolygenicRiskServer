@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* User Specified CSS */
+
+*,
+*:before,
+:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 960px;
+}
+
+.Button {
+	border: 2px solid #000000;
+	border-radius: 4px;
+	padding: 5px;
+	font-size: 14px;
+	font: "Courier-New", Courier, monospace;
+	text-align: center;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 20px;
+}
+
+.Button:hover {
+	background: #ffa500;
+	border-radius: 6px;
+}
+
+* a {
+	text-decoration: none;
+}
+
+* a:hover {
+	background: #ffa500;
+}
+
+h1
+{
+	width: 54%;
+	border-bottom: 2px solid #000000;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 23%;
+	margin-right: 23%;
+	font: 24px "Courier-New", Courier, monospace;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	font: bold 12px "Courier-New", Courier, monospace;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 8px;
+	border-top: 2px solid #000;
+}
+
+nav {
+	border-bottom: 3px double #000000;
+	text-align: center;
+	margin-bottom: 20px;
+	font: 18px "Courier-New", Courier, monospace;
+	overflow: hidden;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+nav a {
+	padding: 8px;
+	color: #000000;
+}
+
+form {
+	margin-bottom: 20px;
+	text-align: left;
+	font: 14px "Courier-New", Courier, monospace;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+fieldset {
+	border: 2px solid #000000;
+	padding: 10px;
+	margin: 4px;
+	border-radius: 4px;
+}
+
+legend {
+	font: 18px "Courier-New", Courier, monospace;
+	padding: 4px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
+.file_select_wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+label {
+	color: #000000;
+	display: block;
+	margin-bottom: 20px;
+	pointer-events: none;
+}
+
+input,
+select,
+textarea {
+  font: 300 14px "Courier-New", Courier, monospace;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  pointer-events: auto;
+}
+
+input {
+	border-radius: 2px;
+	font: 14px "Courier-New", Courier, monospace;
+	margin: 0;
+}
+
+#e-mail {
+	width: 250px;
+}
+
+.required_star {
+	color: red;
+	font: bold;
+}

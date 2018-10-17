@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<link rel = "stylesheet" href = "assets/stylesheets/main.css">
+		<meta charset="utf-8">
+		<title>Polygenic Risk Score Server | Home</title>	
+	</head>
+	<body>
+		<header class = "container">
+			<h1> 
+				<a href = "index.html">Polygenic Risk Score Server v1.0</a>				
+			</h1>
+			<nav>
+				<a href = "index.html">Home</a>
+				<a href = "format.html">Data Formats</a>
+				<a href = "faq.html">FAQ</a>
+				<a href = "sources.html">Sources</a>
+				<a href = "status.html">Job Status</a>
+				<a href = "contact.html">Contact</a>
+			</nav>
+		</header>
+		<section class = "container">
+			<form action = "submit.html" method = "post">
+				<fieldset>
+					<legend>Genotypes in PLINK Format</legend>
+					<div class = "file_select_wrapper">
+						<label class = "file_select_label"><span class = "required_star">*</span>BED
+							<input type = "file" name = "bed"/>
+						</label>
+						<label class = "file_select_label"><span class = "required_star">*</span>BIM
+							<input type = "file" name = "bim"/>
+						</label>
+						<label class = "file_select_label"><span class = "required_star">*</span>FAM
+							<input type = "file" name = "fam"/>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Options</legend>
+					<label>
+						<span class = "required_star">*</span>Consortium
+						<select name = "consortium" id = "Consortium">
+							<option value = "GIANT" selected>GIANT</option>
+							<option value = "PGC" >PGC</option>
+							<option value = "iPSYCH" >iPSYCH</option>
+							<option value = "SSGRC" >SSGRC</option>
+							<option value = "UKBiobank" >UKBiobank</option>
+						</select>
+					</label>
+					<label>
+						<span class = "required_star">*</span>Phenotype
+						<select name = "phenotype" id = "Phenotype">
+							<option value = "Height" selected>Height</option>
+							<option value = "BMI" >BMI</option>
+							<option value = "Schizophrenia" >Schizophrenia</option>
+							<option value = "ADHD" >ADHD</option>
+							<option value = "Autism" >Autism</option>
+							<option value = "Anorexia" >Anorexia</option>
+							<option value = "MajorDepressiveDisorder" >Major Depressive Disorder</option>
+							<option value = "BipolarDisorder" >Bipolar Disorder</option>
+							<option value = "EducationalAttainment" >Educational Attainment</option>
+							<option value = "IQ" >IQ</option>
+							<option value = "SmokingBehavior" >Smoking Behavior</option>
+							<option value = "SelfHarm" >Self Harm</option>
+						</select>
+					</label>
+					<label>
+						<span class = "required_star">*</span>Year
+						<select name = "Year" id = "Year">
+							<option value = "2007" >2007</option>
+							<option value = "2008" >2008</option>
+							<option value = "2009" >2009</option>
+							<option value = "2010" >2010</option>
+							<option value = "2011" >2011</option>
+							<option value = "2012" >2012</option>
+							<option value = "2013" >2013</option>
+							<option value = "2014" >2014</option>
+							<option value = "2015" >2015</option>
+							<option value = "2016" >2016</option>
+							<option value = "2017" >2017</option>
+							<option value = "2018" selected>2018</option>
+						</select>
+					</label>
+					<label>
+						Comma Separated p-value Thresholds
+						<input type = "text" id = "thresholds" name = "tresholds" placeholder ="0.05,1">
+					</label>
+					<label>
+						<span class = "required_star">*</span>Job Identifier
+						<input type = "text" id = "job_id" name = "job_id" placeholder = "GIANT_2018_Height" required>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Results</legend>
+					<label>
+						<span class = "required_star">*</span>E-mail
+						<input type = "email" id = "e-mail" name = "email" placeholder = "username@provider.com" required>
+					</label>
+				</fieldset>
+					<input class = "Button" type = "submit" id = "submit" name = "submit" value = "Submit">
+			</form>
+		</section>
+		<footer class = "container">
+				Designed by Vivek Appadurai | <a href = "https://www.biopsyk.dk/" target = "_blank">Institute of Biological Psychiatry</a>
+		</footer>
+	</body>
+</html>
